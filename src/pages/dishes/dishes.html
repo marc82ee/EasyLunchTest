@@ -1,0 +1,21 @@
+<ion-header>
+    
+    <ion-navbar>
+        <ion-title>{{ dishGroup.category | uppercase }}</ion-title>
+    </ion-navbar>
+    
+ </ion-header>
+    
+    
+ <ion-content padding>
+    <ion-card *ngFor="let dish of dishGroup.dishes; let i = index">
+        <ion-card-header>
+          #{{ i + 1 }}
+        </ion-card-header>
+        <ion-card-content>
+          <p>{{ dish.name }}</p>
+          <p class="author">{{ dish.ingredients }}</p>
+        </ion-card-content>     
+    </ion-card>
+ </ion-content>
+    
