@@ -10,11 +10,13 @@
  <ion-content padding>
     <ion-card *ngFor="let dish of dishGroup.dishes; let i = index">
         <ion-card-header>
-          #{{ i + 1 }}
+          #{{ i + 1 }} {{ dish.name }}
         </ion-card-header>
         <ion-card-content>
-          <p>{{ dish.name }}</p>
-          <p class="author">{{ dish.ingredients }}</p>
+          <p class="ingredients">Ingredients: {{ dish.ingredients }}</p>
+          <ion-row>
+              <ion-img width="180" height="180" src="{{dish.img}}" text-center></ion-img>
+          </ion-row>  
         </ion-card-content>
         <ion-row>
             <ion-col text-right>
@@ -33,9 +35,6 @@
                 *ngIf="isDishSelected(dish)">Remove</button>
             </ion-col>
         </ion-row>  
-        <ion-row>
-            <ion-img width="180" height="180" src="{{dish.img}}" text-center></ion-img>
-        </ion-row>   
     </ion-card>
  </ion-content>
     
