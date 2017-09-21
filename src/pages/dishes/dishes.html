@@ -15,7 +15,27 @@
         <ion-card-content>
           <p>{{ dish.name }}</p>
           <p class="author">{{ dish.ingredients }}</p>
-        </ion-card-content>     
+        </ion-card-content>
+        <ion-row>
+            <ion-col text-right>
+              <button
+                ion-button
+                clear
+                small
+                (click)="onSelectDish(dish)"
+                *ngIf="!isDishSelected(dish)">Select</button>
+              <button
+                ion-button
+                clear
+                small
+                color="danger"
+                (click)="onRemoveDish(dish)"
+                *ngIf="isDishSelected(dish)">Remove</button>
+            </ion-col>
+        </ion-row>  
+        <ion-row>
+            <ion-img width="180" height="180" src="{{dish.img}}" text-center></ion-img>
+        </ion-row>   
     </ion-card>
  </ion-content>
     

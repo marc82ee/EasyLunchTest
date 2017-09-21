@@ -5,17 +5,20 @@ export default [
         {
           id: '1',
           name: 'Ensalada Cesar',
-          ingredients: 'Enciam,pollastre,salsa cesar'
+          ingredients: 'Enciam,pollastre,salsa cesar',
+          img:'../../assets/img/ensalada-cesar.jpg'
         },
         {
           id: '2',
           name: 'Spaghettis amb pesto',
-          ingredients: 'Spaghettis casolans, salsa pesto'
+          ingredients: 'Spaghettis casolans, salsa pesto',
+          img:'../../assets/img/pasta_pesto.jpg'
         },
         {
           id: '3',
           name: 'Hummus',
-          ingredients: 'Cigrons'
+          ingredients: 'Cigrons',
+          img:'../../assets/img/ensalada-cesar.jpg'
         }
       ],
       icon: 'brush'
@@ -26,17 +29,20 @@ export default [
           {
             id: '1',
             name: 'Filet de llom',
-            ingredients: 'Filet de llom, salsa de pera'
+            ingredients: 'Filet de llom, salsa de pera',
+            img:'../../assets/img/ensalada-cesar.jpg'
           },
           {
             id: '2',
             name: 'Pollastre teriaki',
-            ingredients: 'Pollastre, salsa teryaki'
+            ingredients: 'Pollastre, salsa teryaki',
+            img:'../../assets/img/ensalada-cesar.jpg'
           },
           {
             id: '3',
             name: 'Bacalla amb esparrecs',
-            ingredients: 'Bacalla, salsa desparrecs'
+            ingredients: 'Bacalla, salsa desparrecs',
+            img:'../../assets/img/ensalada-cesar.jpg'
           }
         ],
         icon: 'brush'
